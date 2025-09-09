@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Tim Burton Recs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #1c1c1c;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      background: #8e44ad;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    form {
+      background: #2c2c2c;
+      padding: 30px;
+      margin-top: 50px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background: #8e44ad;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #5e3370;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Início</a>
+    <a href="filmes.html">Filmes</a>
+    <a href="contato.html">Contato</a>
+  </header>
+
+  <form id="contatoForm">
+    <h2>Entre em contato</h2>
+    <input type="text" id="nome" placeholder="Seu nome" required>
+    <input type="email" id="email" placeholder="Seu email" required>
+    <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('contatoForm');
+    const nomeInput = document.getElementById('nome');
+    const emailInput = document.getElementById('email');
+
+    form.addEventListener('submit', function(e) {
+      // Validação do nome
+      if (/\d/.test(nomeInput.value)) {
+        e.preventDefault();
+        alert('O nome não pode conter números.');
+        return;
+      }
+
+      // Validação de e-mail personalizada
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value)) {
+        e.preventDefault();
+        alert('Por favor, insira um e-mail válido.');
+        return;
+      }
+    });
+  </script>
+</body>
+</html>

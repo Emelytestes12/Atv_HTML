@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Burton Recs - Filmes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #1c1c1c;
+      color: white;
+    }
+
+    header {
+      background: #8e44ad;
+      padding: 15px;
+      text-align: center;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* padrão PC */
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #2c2c2c;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* 📱 Responsividade: no celular vira 1 coluna */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Início</a>
+    <a href="filmes.html">Filmes</a>
+    <a href="contato.html">Contato</a>
+  </header>
+
+  <section class="grid">
+    <!-- 1 -->
+    <div class="card" onclick="window.open('https://youtu.be/aedzhpBXfHo?feature=shared', '_blank')">
+      <img src="filmes/filme1.jpg" alt="Filme 1">
+      <div class="info">
+        <h3>Edward Mãos de Tesoura (1990)</h3>
+        <p>Um jovem artificial com mãos de tesoura enfrenta o mundo real.</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card" onclick="window.open('https://youtu.be/Lgc5SHbCcys?feature=shared', '_blank')">
+      <img src="filmes/filme2.jpg" alt="Filme 2">
+      <div class="info">
+        <h3>A Noiva Cadáver (2005)</h3>
+        <p>Um noivo acidentalmente se casa com uma noiva cadáver no submundo.</p>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card" onclick="window.open('https://youtu.be/neaKCFT5DO0?feature=shared', '_blank')">
+      <img src="filmes/filme3.jpg" alt="Filme 3">
+      <div class="info">
+        <h3>O Estranho Mundo de Jack (1993)</h3>
+        <p>Jack Skellington tenta trazer o espírito do Natal para o Halloween.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card" onclick="window.open('https://youtu.be/idEWQevrjtg?feature=shared', '_blank')">
+      <img src="filmes/filme4.jpg" alt="Filme 4">
+      <div class="info">
+        <h3>Alice no País das Maravilhas (2010)</h3>
+        <p>Alice, agora com 19 anos, retorna ao País das Maravilhas, onde precisa derrotar a Rainha Vermelha com a ajuda de seus amigos excêntricos.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card" onclick="window.open('https://youtu.be/xtLm2lznKlk?feature=shared', '_blank')">
+      <img src="filmes/filme5.jpg" alt="A Fantástica Fábrica de Chocolate">
+      <div class="info">
+        <h3>A Fantástica Fábrica de Chocolate (2005)</h3>
+        <p>Charlie Bucket encontra um bilhete dourado e visita a misteriosa fábrica de Willy Wonka, cheia de surpresas mágicas e desafios.</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card" onclick="window.open('https://youtu.be/VlTUGXAnMNQ?feature=shared', '_blank')">
+      <img src="filmes/filme6.jpg" alt="Sombras da Noite">
+      <div class="info">
+        <h3>Sombras da Noite (2012)</h3>
+        <p>O vampiro Barnabás Collins desperta após dois séculos e tenta retomar sua vida, enquanto lida com sua excêntrica família e antigos inimigos.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
