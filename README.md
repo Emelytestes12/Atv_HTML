@@ -8,26 +8,36 @@ Bem-vindo ao **Tim Burton Recs**, um site dedicado aos filmes icônicos do diret
 
 <img width="1296" height="636" alt="image" src="https://github.com/user-attachments/assets/68d0e371-7b7f-48e3-8281-2ac5c8b01826" />
 
----
-
-
-## 🌐 Acesse o site
-
-🔗 https://timburtonrecs.netlify.app/
 
 ---
 
-Além da navegação pelos filmes, o site oferece um formulário de contato simples.
+### Além da navegação pelos filmes, o site oferece um formulário de contato simples:
+
 
 <img width="1298" height="582" alt="image" src="https://github.com/user-attachments/assets/66b2a972-9a38-49a9-839a-7c08d8f3ab63" />
 
 ---
+
+## 💜🔗 Acesse: https://timburtonrecs.netlify.app/
+
+---
+
 
 # 📁 Estrutura de diretórios
 
 <img width="211" height="288" alt="image" src="https://github.com/user-attachments/assets/6db0005c-ca96-4afe-ba77-ee0f32792fea" />
 
 ---
+
+<p align="center">
+   
+  <img alt="JavaScript" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
+  <img alt="HTML5" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" />
+  <img alt="CSS3" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" /> 
+</p>
+
+---
+
 
 # 📄 Estrutura das Páginas
 
@@ -78,6 +88,7 @@ Além da navegação pelos filmes, o site oferece um formulário de contato simp
 2- E-mail deve seguir o formato padrão válido;
 
 3- Menu de navegação integrado para facilitar o acesso às outras seções.
+
 
 ---
 
